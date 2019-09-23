@@ -1,17 +1,21 @@
 #! /bin/sh
 
-apt-get update
+sudo apt-get update
 # wget
-apt-get install wget
+sudo apt-get install wget
 # curl
-apt-get install curl
+sudo apt-get install curl
 # git
-apt-get install git
+sudo apt-get install git
 # vim
-apt-get install vim
+sudo apt-get install vim
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 nvm install --lts
 # zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 source ~/.zshrc
+
+sudo apt-get install nginx
+
+sudo apt-get install php-7.2 php-7.2-fpm
